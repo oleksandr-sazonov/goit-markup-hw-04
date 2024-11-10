@@ -125,9 +125,29 @@ img {
 /* ---------------------------------------------HERO--------------------------------------------- */
 
 .hero {
-    background: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 188px;
+        background-color: #2E2F42;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 188px 0;
+        background-size: cover;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(/images/people-office.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+     
+    
+}
+
+.hero-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    /* padding: 188px 0 188px;
+
+    width: 100%;
+    margin: 0 auto; */
+    box-sizing: border-box;
+    background-size: cover;
 }
 
 .hero-title {
@@ -208,6 +228,61 @@ img {
     letter-spacing: 0.02em;
 }
 
+.goal-icon-container {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #f4f4fd;
+    margin-bottom: 8px;
+}
+
+.member-role {
+        font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: #434455;
+            margin-bottom: 8px;
+}
+
+.list-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     display: flex;   
+     gap: 24px;
+     margin-left: auto;
+}
+.box-socials {
+    width: 40px;
+    height: 40px;
+   
+}
+
+.socials-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    gap: 24px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+   
+    
+}
+
+.icon-social {
+    fill: #f4f4fd;
+}
 /* ---------------------------------------------OUR TEAM--------------------------------------------- */
 
 .team {
@@ -318,10 +393,44 @@ img {
 
 /* ---------------------------------------------FOOTER--------------------------------------------- */
 
+.container-footer {
+    display: flex;
+    flex-direction: flex;
+    align-items: baseline;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 .footer {
-    background: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    background-color: #2E2F42;
+        color: #F4F4FD;
+        padding: 100px 0;
+        display: flex;
+        align-items: baseline;
+}
+.social-media {
+    font-weight: 500;
+
+}
+.social-footer {
+    display: flex;
+    gap: 16px;     
+}
+
+.footer-text {
+        font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #fff;
+            margin-bottom: 16px;
+}
+
+.footer-block-logo {
+    margin-right: 120px;
 }
 
 .footer-logo {
@@ -346,4 +455,23 @@ img {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+}
+
+.footer-tect-icon {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-container-icon {
+    margin-right: 120px;
+}
+
+.container-footer .socials-link:hover,
+.container-footer .socials-link:focus {
+    background-color: #31d0aa;
 }
